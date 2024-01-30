@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+     
+</head>
+<body>
+     <div id="root"></div>
+    
+     <script>
+       const h1 = React.createElement("h1", null, "Mobile Operating System");
+       const l1 = React.createElement("li", null, "Android");
+       const l2 = React.createElement("li", null, "Blacberry");
+       const l3 = React.createElement("li", null, "iphone");
+       const l4 = React.createElement("li", null, "Windows Phone");
+       
+       const h2 = React.createElement("h1", null, "Mobile Manufactures");
+       const l5 = React.createElement("li", null, "Samsung");
+       const l6 = React.createElement("li", null, "Microsoft");
+       const l7 = React.createElement("li",null, "Apple");
+       const l8 = React.createElement("li", null, "HTC")
+       
+
+       const divElement = React.createElement(
+           "div" , {class: "header"}, React.createElement("ul", null, [h1 ,l1, l2, l3, l4, h2, l5,l6,l7,l8])
+       );
+       const container = document.getElementById("root");
+       const root = ReactDOM.createRoot(container);
+       ReactDOM.render(divElement, container);
+     </script>
+</body>
+</html>
